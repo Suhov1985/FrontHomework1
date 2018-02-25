@@ -1,0 +1,705 @@
+//FONTS BEGIN
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic,cyrillic-ext')
+//FONTS END
+
+//COLORS
+$orange: #ff6724
+
+//OTHER STYLES BEGIN
+body
+	width: 100%
+	max-width: 100%
+	overflow-x: hidden
+	font-size: 16px
+	font-family: 'Open Sans', sans-serif
+*
+	outline: none !important
+
+img
+	max-width: 100%
+
+a
+	transition: 1s ease
+	text-decoration: none
+	&:hover
+		transition: 1s ease
+
+.btn
+	height: 40px
+	min-width: 40px
+	border-radius: 4px
+	cursor: pointer
+	color: #ffffff
+	font-size: 14px
+	font-weight: 400
+	line-height: 42px
+	text-align: center
+	padding: 0
+	&-orange
+		padding: 0
+		transition: all .3s ease-out
+		&:hover, &:active, &:focus
+			background-color: transparent
+			transition: all .3s ease-out
+
+.text-orange
+	color: $orange
+h2
+	font-size: 36px
+	line-height: 42px
+	font-weight: bold
+	letter-spacing: .025em
+	text-align: center
+	color: #141414
+	text-transform: uppercase
+	margin: 0 0 16px 0
+h3
+	font-size: 26px
+	line-height: 36px
+	font-weight: bold
+	text-align: center
+	margin: 0 0 25px 0
+//OTHER STYLES END
+
+//Header styles
+.header
+	.navbar-fixed-top
+		background: #fff
+		box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.1)
+		min-height: 52px
+	.navbar
+		li
+			&:hover
+				background: transparent
+				a
+					color: $orange
+					background: transparent
+					span
+						transition: 1s ease
+						border-bottom: 1px solid $orange
+			a
+				color: #141414
+				font-weight: 600
+				padding: 10px 8px
+				span
+					transition: 1s ease
+					border-bottom: 1px solid #000
+//Header styles end
+
+//Main styles
+.main
+	.big-slider
+		margin-top: 50px
+		.sec1-slider
+			position: relative
+			.slick-prev, .slick-next
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				bottom: 0px
+				z-index: 11
+				display: inline-block
+				width: 70px
+				height: 70px
+				font-size: 0
+				border: 1px solid transparent
+				background: #fff
+				border-radius: 100%
+				&:before
+					content: ""
+					font-family: FontAwesome, sans-serif
+					font-size: 34px
+					color: #000
+					line-height: 60px
+			.slick-prev
+				left: 22%
+				&:before
+					content: "\f104"
+			.slick-next
+				right: 22%
+				&:before
+					content: "\f105"
+			.slick-slide
+				.photo-block
+					position: relative
+					padding: 0
+					width: 100%
+					max-height: 670px
+					max-width: 1170px
+					overflow: hidden
+					vertical-align: bottom
+					.desc
+						position: absolute
+						top: 50%
+						transform: translateY(-50%)
+						left: 0
+						right: 0px
+						max-width: 800px
+						margin: 0 auto
+						z-index: 2
+						p
+							font-size: 30px
+							font-weight: 900
+							text-shadow: -2px 2px 0px #fff
+						span
+							font-size: 34px
+							font-weight: 900
+							text-shadow: -2px 2px 0px #fff
+						.text-border
+							border-bottom: 2px dashed #000
+						img
+							position: relative
+							width: 100%
+							height: 100%
+							display: inline-block
+							vertical-align: bottom
+							z-index: 1
+	.why-sec
+		padding: 80px 0px 70px
+		.desc-right
+			float: right
+		h2
+			margin-bottom: 100px
+		.link
+			margin-bottom: 30px
+			min-height: 200px
+			font-size: 20px
+			.img-block
+				margin-bottom: 30px
+		.car-foto
+			display: inline-block
+			vertical-align: middle
+			line-height: 400px
+	.works-sec
+		text-align: center
+		padding-bottom: 30px
+		.top-sec
+			padding-top: 15px
+			background: #5a4e90 /* Old browsers */
+			background: -moz-linear-gradient(left, #5a4e90 0%, #3d3372 100%, #3d3372 100%, #3d3372 100%, #3d3372 100%, #3d3372 102%) /* FF3.6-15 */
+			background: -webkit-linear-gradient(left, #5a4e90 0%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 102%) /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right, #5a4e90 0%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 102%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a4e90', endColorstr='#3d3372',GradientType=1 ) /* IE6-9 */
+			box-shadow: inset 0px -21px 21px -8px rgba(0,0,0,0.35)
+			padding-bottom: 0
+		h3
+			color: #fff
+		.nav-tabs
+			display: inline-block
+			vertical-align: bottom
+			margin-bottom: 0
+			border-bottom: 0
+			li
+				margin-bottom: 0
+				border-bottom: 0
+				a
+					border-radius: 3px 3px 0 0
+					padding: 10px 20px
+					margin: 0 15px
+					font-weight: bold
+					background: #fff
+					border: 0px
+					color: #000
+			.active
+				a
+					background: #ff9b23
+					color: #fff
+					span
+						border-bottom: 1px dashed #fff
+		.tab-content
+			padding-top: 30px
+		.tabs-btns
+			li
+				a
+					border: 2px solid #000
+					border-radius: 30px
+					padding: 7px 25px
+					margin: 0 25px
+					font-size: 18px
+					font-weight: 500
+			.active
+				a
+					border: 2px solid #ff9b23
+		.work-list
+			text-align: left
+			display: block
+			li
+				p
+					position: relative
+					font-size: 20px
+					.price
+						position: absolute
+						top: 0
+						right: 0
+	.leadership-sec
+		padding: 75px 0px 45px
+		background: #5a4e90 /* Old browsers */
+		background: -moz-linear-gradient(left, #5a4e90 0%, #3d3372 100%, #3d3372 100%, #3d3372 100%, #3d3372 100%, #3d3372 102%) /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #5a4e90 0%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 102%) /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #5a4e90 0%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 102%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a4e90', endColorstr='#3d3372',GradientType=1 ) /* IE6-9 */
+		.top
+			text-align: center
+			margin-bottom: 80px
+			.title-block, .play-block
+				display: inline-block
+				vertical-align: middle
+			.title-block
+				color: #fff
+				font-size: 36px
+				text-transform: uppercase
+				text-align: left
+				line-height: 46px
+				font-weight: bold
+				padding-right: 80px
+				text-shadow: 3px 3px 0px #19114c
+			.play-block
+				.btn
+					background: #fee781 /* Old browsers */
+					background: -moz-linear-gradient(left, #fee781 0%, #ff924d 49%, #ff8544 100%) /* FF3.6-15 */
+					background: -webkit-linear-gradient(left, #fee781 0%,#ff924d 49%,#ff8544 100%) /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to right, #fee781 0%,#ff924d 49%,#ff8544 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee781', endColorstr='#ff8544',GradientType=1 ) /* IE6-9 */
+					padding: 20px 60px 20px 100px
+					max-width: 420px
+					width: 100%
+					height: auto
+					font-size: 20px
+					color: #000
+					line-height: 20px
+					font-weight: bold
+					text-align: left
+					position: relative
+					border: 1px solid #000
+					box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.75)
+					i
+						position: absolute
+						top: 50%
+						left: 50px
+						transform: translateY(-50%)
+						font-size: 30px
+		.icon
+			margin-bottom: 15px
+		.text
+			color: #fc854d
+			max-width: 252px
+			margin: 0 auto
+			font-size: 18px
+			text-transform: uppercase
+			text-align: center
+
+	.business-sec
+		padding: 120px 0px 80px
+		.title
+			text-transform: uppercase
+			font-size: 34px
+			font-weight: bold
+			max-width: 430px
+			margin: 0 auto 90px
+		.business-text
+			position: relative
+			margin-bottom: 50px
+			p
+				font-size: 20px
+				margin-bottom: 30px
+			.count
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-size: 90px
+				font-weight: bold
+				color: #ff8542
+				z-index: -1
+	.delivery-sec
+		padding: 80px 0px 0px
+		background: #5a4e90 /* Old browsers */
+		background: -moz-linear-gradient(left, #5a4e90 0%, #3d3372 100%, #3d3372 100%, #3d3372 100%, #3d3372 100%, #3d3372 102%) /* FF3.6-15 */
+		background: -webkit-linear-gradient(left, #5a4e90 0%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 102%) /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right, #5a4e90 0%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 100%,#3d3372 102%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a4e90', endColorstr='#3d3372',GradientType=1 ) /* IE6-9 */
+		.title
+			color: #fff
+			margin-bottom: 40px
+			font-weight: bold
+			font-size: 32px
+			text-transform: uppercase
+			padding-left: 60px
+		.list-title
+			padding-left: 60px
+			font-weight: bold
+			font-size: 22px
+			color: #ff8241
+		ul
+			padding-left: 60px
+			margin-bottom: 30px
+			li
+				color: #fff
+				font-size: 22px
+		.banner
+			padding: 15px 30px 15px 100px
+			border: 4px solid #ff8241
+			max-width: 560px
+			width: 100%
+			margin-bottom: 40px
+			color: #ff8241
+			font-size: 20px
+			font-weight: bold
+			position: relative
+			.shield
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				left: 40px
+		.lada-img
+			margin-left: -50px
+	.service-sec
+		background: #f2f2f2
+		padding: 15px 0px 20px
+		.service-block
+			text-align: center
+			.img-block
+				img
+					width: 100%
+			.desc-block
+				padding: 10px
+				background: #fff
+				min-height: 260px
+				.title
+					text-transform: uppercase
+					margin-bottom: 20px
+					font-weight: bold
+					font-size: 24px
+	.about-sec
+		background: url("../img/about.jpg") center center no-repeat
+		background-size: cover
+		padding: 140px 0px
+		.title
+			color: #fff
+			font-size: 42px
+			font-weight: bold
+			text-transform: uppercase
+			margin-bottom: 70px
+			text-shadow: 3px 3px 0px #025b85
+		.text
+			color: #fff
+			font-size: 22px
+			font-weight: bold
+			text-shadow: 3px 3px 0px #025b85
+	.sert-sec
+		padding: 75px 0px 100px
+		.quality-text
+			font-weight: bold
+			font-size: 30px
+			text-align: center
+			margin-top: 70px
+			span
+				display: inline-block
+				max-width: 300px
+				line-height: 36px
+				text-align: left
+	.contacts-sec
+		font-size: 0
+		.contacts-info, .contacts-map
+			display: inline-block
+			width: 50%
+			vertical-align: top
+		.contacts-info
+			background: #5a4e90
+			padding-left: 20%
+			padding-top: 60px
+			height: 400px
+			.contact-title
+				color: #fff
+				font-size: 20px
+				font-weight: bold
+				text-transform: uppercase
+				margin-bottom: 50px
+			.contact-phone, .contact-adres, .contact-mail
+				margin-bottom: 30px
+				font-size: 20px
+				color: #fff
+				font-weight: bold
+				position: relative
+				i
+					position: absolute
+					top: 0px
+					width: 30px
+					left: -40px
+					font-size: 30px
+					text-align: center
+				a
+					font-size: 22px
+					color: #fff
+					font-weight: bold
+		#map
+			width: 100%
+			height: 400px
+//Main styles end
+
+//Footer styles
+.footer
+	padding: 10px
+	p
+		margin-bottom: 0
+		font-weight: bold
+//Footer styles end
+
+//Media styles
+@media(max-width: 1700px)
+	.main
+		.big-slider
+			.sec1-slider
+				.slick-prev, .slick-next
+					width: 60px
+					height: 60px
+					&:before
+						font-size: 30px
+				.slick-prev
+					left: 5%
+				.slick-next
+					right: 5%
+@media(max-width: 1200px)
+	.main
+		.delivery-sec
+			.title
+				margin-bottom: 40px
+				font-size: 28px
+				padding-left: 0px
+			.list-title
+				padding-left: 0px
+				font-size: 18px
+			ul
+				padding-left: 0px
+				margin-bottom: 20px
+				li
+					font-size: 18px
+			.banner
+				padding: 15px 20px 15px 70px
+				max-width: 560px
+				width: 100%
+				margin-bottom: 40px
+				font-size: 18px
+				.shield
+					left: 30px
+			.lada-img
+				margin-left: 0px
+@media(max-width: 992px)
+	.main
+		.big-slider
+			.sec1-slider
+				.slick-prev, .slick-next
+					width: 40px
+					height: 40px
+					&:before
+						font-size: 26px
+						line-height: 30px
+				.slick-prev
+					left: 0%
+				.slick-next
+					right: 0%
+				.slick-slide
+					.photo-block
+						.desc
+							max-width: 600px
+							p
+								font-size: 20px
+							span
+								font-size: 24px
+		.why-sec
+			padding: 80px 0px 70px
+			text-align: center
+			.desc-right
+				float: none
+			h2
+				margin-bottom: 70px
+			.link
+				display: inline-block
+				width: 49%
+				min-height: 10px
+				font-size: 20px
+				.img-block
+					margin-bottom: 20px
+			.car-foto
+				line-height: normal
+		.works-sec
+			.tabs-btns
+				li
+					a
+						padding: 7px 20px
+						margin: 0 10px
+						font-size: 16px
+		.business-sec
+			padding: 70px 0px 50px
+			.title
+				font-size: 30px
+				margin: 0 auto 60px
+			.business-text
+				position: relative
+				margin-bottom: 70px
+				p
+					font-size: 18px
+					margin-bottom: 10px
+		.sert-sec
+			padding: 50px 0px
+			.quality-text
+				font-weight: bold
+				font-size: 30px
+				text-align: center
+				margin: 0px 0px 30px
+				span
+					line-height: normal
+					text-align: center
+		.contacts-sec
+			font-size: 0
+			.contacts-info, .contacts-map
+				display: inline-block
+				width: 50%
+				vertical-align: top
+			.contacts-info
+				padding-left: 10%
+				padding-top: 60px
+				height: 400px
+@media(max-width: 768px)
+	.header
+		.navbar-toggle
+			border: 1px solid #000
+			.icon-bar
+				background: #000
+	.main
+		.big-slider
+			max-width: 100%
+			width: 100%
+			.sec1-slider
+				max-width: 100%
+				width: 100%
+				.slick-slide
+					.photo-block
+						width: auto
+						max-width: 100%
+						max-height: 500px
+						height: auto
+						.desc
+							max-width: 300px
+							text-align: center
+							width: 100%
+							p
+								font-size: 20px
+							span
+								font-size: 24px
+						img
+							position: relative
+							width: 100%
+							max-width: 100%
+							height: auto
+
+		.why-sec
+			padding: 50px 0px 70px
+			h2
+				margin-bottom: 50px
+				font-size: 20px
+				line-height: normal
+			.link
+				font-size: 18px
+		.works-sec
+			h3
+				font-size: 20px
+			.tabs-btns
+				li
+					display: inline-block
+					width: 49%
+					margin-bottom: 10px
+					a
+						padding: 7px 10px
+						margin: 0 10px
+						font-size: 16px
+			.work-list
+				li
+					p
+						position: relative
+						font-size: 18px
+						padding-right: 60px
+						.price
+							position: absolute
+							top: 0
+							right: 0
+		.leadership-sec
+			padding: 50px 0px 30px
+			.top
+				text-align: center
+				margin-bottom: 50px
+				.title-block, .play-block
+					display: block
+					vertical-align: middle
+				.title-block
+					font-size: 24px
+					text-align: center
+					line-height: normal
+					padding-right: 0px
+					margin-bottom: 30px
+				.play-block
+					.btn
+						max-width: 320px
+						padding: 20px 60px 20px 80px
+						i
+							left: 30px
+			.icon
+				margin: 15px 0px
+			.text
+				color: #fc854d
+				max-width: 252px
+				margin: 0 auto
+				font-size: 18px
+				text-transform: uppercase
+				text-align: center
+
+		.delivery-sec
+			.title
+				margin-bottom: 40px
+				font-size: 22px
+			.list-title
+				font-size: 16px
+			ul
+				margin-bottom: 20px
+				li
+					font-size: 14px
+			.banner
+				padding: 15px 10px 15px 50px
+				max-width: 560px
+				width: 100%
+				margin-bottom: 40px
+				font-size: 16px
+				.shield
+					left: 15px
+			.lada-img
+				margin-left: 0px
+		.about-sec
+			padding: 100px 0px
+			.title
+				font-size: 30px
+				margin-bottom: 50px
+			.text
+				font-size: 16px
+		.sert-sec
+			padding: 50px 0px
+			.quality-text
+				font-weight: bold
+				font-size: 26px
+				text-align: center
+				margin: 0px 0px 30px
+				span
+					line-height: normal
+					text-align: center
+			.sert-img
+				margin-bottom: 30px
+		.contacts-sec
+			font-size: 0
+			.contacts-info, .contacts-map
+				display: block
+				width: 100%
+				vertical-align: top
+			.contacts-info
+				padding-left: 0%
+				padding-top: 60px
+				text-align: center
+				height: 400px
